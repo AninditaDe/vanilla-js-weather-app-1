@@ -16,9 +16,11 @@
     <div class="app" id="app">
         <div class="main" id="main">
             <div class="search-box">
-                <input id="search-bar" type="text" placeholder="Search..." class="search-bar" />
+                <input id="search-bar" type="text" placeholder="Search..." class="search-bar"
+                    onkeypress="BuildURL(event)" />
 
             </div>
+            <div id="errorMessage" class="error"></div>
             <div class="weather-wrap">
                 <div class="location-box">
                     <div id="location" class="location"></div>
@@ -32,6 +34,8 @@
         </div>
     </div>
     <script src="./script.js"></script>
+    <script src="./api.js"></script>
+    <script src="./ui.js"></script>
 </body>
 
 </html>
